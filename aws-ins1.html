@@ -1,0 +1,57 @@
+<html>
+<head>
+   <style>
+      table, th, td {
+       border: 2px solid black;
+     }
+</style>
+</head>
+<body>
+<center><h1>AWS instances details</h1></center>
+<p>AccessID:{{id}}
+   secret key:{{key}}</p>
+<table style="width:100%;">
+   <tr><th>s.no</th>
+   <th>ImageId</th>
+   <th>InstanceId</th>
+   <th>InstanceType</th>
+   <th>KeyName</th>
+   <th>LaunchTime</th>
+   <th>Monitoring</th>
+   <th>Zone</th>
+   <th>PrivateIpAddress</th>
+   <th>IpOwnerId</th>
+   <th>GroupId</th>
+   <th>Groupname</th>
+   <th>MacAddress</th>
+   <th>OwnerId</th>
+   <th>SubnetId</th>
+   <th>VpcId</th>
+   </tr>
+
+<!-- For loop logic of jinja template -->
+{%for i in range(0, len)%}
+
+   <tr><td>{{i+1}}</td>
+      <td>{{na[i]['Instances'][0]['ImageId']}}</td>
+      <td>{{na[i]['Instances'][0]['InstanceId']}}</td>
+      <td>{{na[i]['Instances'][0]['InstanceType']}}</td>
+      <td>{{na[i]['Instances'][0]['KeyName']}}</td>
+      <td>{{na[i]['Instances'][0]['LaunchTime']}}</td>
+      <td>{{na[i]['Instances'][0]['Monitoring']}}</td>
+      <td>{{na[i]['Instances'][0]['Placement']['AvailabilityZone']}}</td>
+      <td>{{na[i]['Instances'][0]['PrivateIpAddress']}}</td>
+      <td>{{na[i]['Instances'][0]['NetworkInterfaces'][0]['Association']['IpOwnerId']}}</td>
+      <td>{{na[i]['Instances'][0]['NetworkInterfaces'][0]['Groups'][0]['GroupId']}}</td>
+      <td>{{na[i]['Instances'][0]['NetworkInterfaces'][0]['Groups'][0]['GroupName']}}</td>
+        <td>{{na[i]['Instances'][0]['NetworkInterfaces'][0]['MacAddress']}}</td>
+      <td>{{na[i]['Instances'][0]['NetworkInterfaces'][0]['OwnerId']}}</td>
+      <td>{{na[i]['Instances'][0]['NetworkInterfaces'][0]['SubnetId']}}</td>
+      <td>{{na[i]['Instances'][0]['NetworkInterfaces'][0]['VpcId']}}</td>
+
+
+   </tr>
+{%endfor%}
+</table>
+</body>
+</html>
