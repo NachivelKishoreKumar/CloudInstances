@@ -1,0 +1,19 @@
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="{{url_for('static',filename='prof.css')}}">
+</head>
+   <body>
+
+  <!-- <form action = "http://localhost:2414/details" method = "post">-->
+  <form action = "http://127.0.0.1:5000/account/aws-details" method = "post">
+         <center><b><h1>AWS</h1></b><br><br>
+         <p>Enter Access Key ID::</p>
+         <p><input type = text name='id'/></p>
+          <p>Enter secret Access Key:</p>
+          <p><input type = text name='key'/></p>
+         <p align="right"><input type = "submit" value = "submit"   style="height:40px; width:120px; font-size:20px;"/></p>
+      </form>
+
+   </body>
+</html>
