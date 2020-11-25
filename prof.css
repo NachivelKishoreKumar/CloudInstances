@@ -1,0 +1,19 @@
+table, th, td {
+  border: 2px solid black;
+  border-collapse: collapse
+  padding:20px;
+  color:black;
+margin-left:50%;
+margin-right:50%;
+top:100%
+bottom:100%
+  }
+body {
+  background:url(wall.jpg) ;
+  background-attachment:fixed;
+  background-size:100%
+
+}
+p{
+  font-size: 150%;
+}
