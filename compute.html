@@ -1,0 +1,21 @@
+<html xmlns:font-size="http://www.w3.org/1999/xhtml" xmlns:width="http://www.w3.org/1999/xhtml"
+      xmlns:height="http://www.w3.org/1999/xhtml">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="{{url_for('static',filename='prof.css')}}">
+</head>
+
+   <body>
+      <form action = "http://127.0.0.1:5000/account/gcloud-details" method = "post">
+       <!--    <form action = "http://localhost:5555/gcloud-details" method = "post">-->
+         <center><h1>GOOGLE INSTANCE</h1></center>
+          <h2>Gcloud details:</h2>
+          <center><p>Project Name:</p>
+          <p><input type = text name='pname' style="height:30px; width:200px; font-size:10px;"/></p>
+          <p>Zone::</p>
+          <p><input type = text name='pzone' style="height:30px; width:200px; font-size:10px;"/></p></center>
+          <p align="right"><input type = "submit" value = "submit"  style="height:40px; width:120px; font-size:20px;"/></p>
+      </form>
+
+   </body>
+</html>
