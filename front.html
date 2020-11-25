@@ -1,0 +1,22 @@
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="{{url_for('static',filename='try3.css')}}">
+
+
+</head>
+  <body>
+  <form action = "http://127.0.0.1:5000/account" method = "post">
+    <center><h1 style="font-size:60px;"><I>INSTANCES ACCOUNTS</I></h1></center>
+   <h2 style="font-family:Times; font-size:55px;">Select Account: </h2>
+   <p>
+    <center> <input type="radio" name="account" id="AWS-CLOUD" value="AWS-CLOUD" style="height:50px;width:50px"/><label style="font-size: 50px;"><I>Aws-Cloud</I></label>
+    <input type="radio" name="account" id="AZURE" value="AZURE" style="height:50px;width:50px"/><label style="font-size: 50px;">Azure</label>
+    <input type="radio" name="account" id="GOOGLE-CLOUD" value="GOOGLE-CLOUD" style="height:50px;width:50px"/><label style="font-size:50px;">Google-Cloud</label></p>
+    <p><input type = "submit" value = "submit" align="right" style="height:70px; width:150px;font-size:25px;" /></p>
+     <!--<p><input type="image" src="submit.png" alt="Submit"  /></p>-->
+      <marquee style="font-size:30px">Welcome! </marquee>
+  </form>
+
+  </body>
+</html>
